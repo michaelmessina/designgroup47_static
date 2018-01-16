@@ -1,0 +1,477 @@
+/* CONTAINERS, SECTIONS, LAYOUT */
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.container .row {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+/*Flexbox layout with sticky footer. Requires 3 elements <header>,<main> and <footer>*/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #FFF !important;
+  }
+
+main {
+    flex: 1 0 auto;
+  }
+
+footer.page-footer {
+    margin: 0;
+}
+
+tr td {
+    padding: 0 10px 0 10px;
+}
+
+/* PARALLAX */
+
+.parallax-container {
+    min-height: 420px !important;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+    margin-bottom: 2rem;
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+/* NAVIGATION */
+
+nav ul a {
+    font-size: 1.25rem;
+}
+
+nav .brand-logo {
+    position: absolute;
+    top: 0.25rem;
+    color: #fff;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+    white-space: nowrap;
+}
+
+nav ul a,
+nav .brand-logo {
+    color: #FFF;
+    letter-spacing: .025rem;
+    
+}
+
+/* CARDS, ICON BLOCKS */
+
+.card-action a {
+    color: #00bcd4 !important;
+}
+
+.card-background {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+/* MODALS */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    max-height: 100%;
+    width: 100%;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 0px;
+    will-change: top, opacity;
+}
+
+@media only screen and (max-width: 992px) {
+  .modal {
+    width: 100%;
+  }
+}
+
+.card-content span .modal-trigger {
+    cursor: pointer !important;
+}
+
+.modal .modal-footer {
+  border-radius: 0px;
+  background-color: #fff;
+  padding: 4px 6px;
+  height: 56px;
+  width: 100%;
+}
+
+.modal.modal-fixed-footer {
+  padding: 0;
+  height: 100%;
+}
+
+.modal-trigger {
+    cursor: pointer !important;
+}
+
+.signup-form {
+    background-image: url(../img/feature-flooring-berti-diesel-living.jpg) !important;
+     width: 100%;
+  height: 100%;
+  background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+/* TEXT */
+
+p {
+  line-height: 2rem;
+}
+
+.card p {
+    padding-bottom: 2rem;
+}
+
+/* BUTTONS */
+
+.button-collapse {
+  color: #FFFFFF;
+}
+
+.btn-large {
+    text-shadow: 2px 2px 2px #263238;
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 0.25rem !important;
+}
+
+.btn, .btn-large, .btn-flat {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    line-height: 36px;
+    outline: 0;
+    padding: 0 2rem;
+    text-transform: none;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* HELPERS */
+
+.text-shadow {
+    text-shadow: 1px 1px 2px #455a64;
+}
+
+.transparent {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* COLLAPSIBLE */
+
+.collapsible-header {
+    display: block;
+    font-size:1.75rem;
+    cursor: pointer;
+    min-height: 4rem;
+    line-height: 4rem;
+    padding: 0 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.collapsible-header:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.collapsible-header i {
+    width: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    display: block;
+    float: left;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.collapsible-bodybody h5 {
+    margin: 2rem 0 0 2rem;
+}
+
+.collapsible-body .container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+/* COLLECTIONS */
+
+.collection a.collection-item {
+  display: block;
+  transition: .25s;
+  color: #00bcd4;
+}
+
+.collection .collection-item.active {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+.collection a.collection-item:not(.active):hover {
+  background: #00bcd4;
+    color: #fff;
+}
+
+/* CUSTOM */
+
+.title {
+    color: #fff;
+    height: 240px;
+    margin: 0;
+    padding: 0;
+}
+
+.title h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10vw;
+    letter-spacing: 2vw;
+}
+
+.title-sm {
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: .25rem;
+}
+
+.title-sl {
+    font-weight: normal;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 5vw;
+    color: #fff;
+}
+
+@media only screen and (min-width: 993px) {
+  .title-sl {
+      font-size: 3vw !important;
+  }
+}
+
+.sub-title-sl {
+    font-weight: normal;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4vw;
+    color: #fff;
+}
+
+@media only screen and (min-width: 993px) {
+  .sub-title-sl {
+      font-size: 2vw !important;
+  }
+}
+
+/* SLIDERS */
+
+.slider .slides li img {
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+
+.slider .slides li .caption {
+    color: #fff;
+    text-shadow: 2px 2px 2px #263238; 
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 70%;
+    opacity: 0.75;
+}
+
+.slider .slides li .caption p {
+    color: #e0e0e0;
+}
+
+.slider .indicators {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: 2;
+}
+
+.slider .indicators .indicator-item {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 12px;
+  background-color: #e0e0e0;
+  transition: background-color .3s;
+  border-radius: 50%;
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: #00bcd4;
+}
+
+@media only screen and (min-width: 501px) {
+  .slider {
+     height: 400px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .slider .indicators {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .slider .indicators {
+     bottom: 4.5rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .slider .indicators {
+     bottom: 4.25rem;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .slider .indicators {
+     bottom: 3.75rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .slider .indicators {
+     bottom: 2.75rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .slider .indicators {
+     bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .slider .indicators {
+     bottom: 1.25rem;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .slider .indicators {
+     bottom: .5rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .slider .indicators {
+     bottom: 0;
+  }
+}
+
+
+/* VIDEO */
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* PROGRESS BARS */
+
+.progress {
+    position: relative;
+    height: 25px;
+    display: block;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 2px;
+    margin: 0.5rem 0 1rem 0;
+    overflow: hidden;
+}
+
+.progress .determinate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #00bcd4;
+    transition: width .3s linear;
+}
+
+.progress .indeterminate {
+    background-color: #00bcd4;
+}
