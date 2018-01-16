@@ -475,3 +475,7 @@ p {
 .progress .indeterminate {
     background-color: #00bcd4;
 }
+
+#sidenav-overlay {
+    z-index: 1;
+}
